@@ -1,0 +1,186 @@
+.hero {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center-align text within the element */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; 
+    overflow: "hidden",/* Stack children vertically */
+  }
+  
+  /* Wave animation for the emoji */
+  .blog-title-emoji {
+    animation: wave-animation 2.5s infinite; /* Combine shorthand */
+    transform-origin: 70% 70%; /* Define pivot point */
+    display: inline-block;
+  }
+  
+  /* Title Styles */
+  .hTitle {
+    font-size: 2vw; /* Responsive font size */
+    color: orangered;
+    font-weight: bold;
+    text-align: center; /* Ensure text is centered within the element */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Subtitle Styles */
+  .textHtitle {
+    font-size: 3vw; /* Responsive font size */
+    color: #efd8d8;
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px; /* Spacing below title */
+  }
+  
+  /* Mobile Responsiveness */
+  
+  
+  /* Wave Animation Keyframes */
+  @keyframes wave-animation {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(14deg);
+    }
+    30% {
+      transform: rotate(-8deg);
+    }
+    40% {
+      transform: rotate(14deg);
+    }
+    50% {
+      transform: rotate(-4deg);
+    }
+    60% {
+      transform: rotate(10deg);
+    }
+    70% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Parent container for the image and rocket */
+  .image-container {
+    position: relative; /* Position relative for child absolute positioning */
+    width: 300px; /* Container width */
+    height: 300px; /* Container height */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center-image:hover{
+    color: #111;
+            
+            box-shadow: 0 0 100px goldenrod;
+  }
+  
+  /* Centered circular image */
+  .center-image {
+    width: 250px; /* Image width */
+    height: 250px; /* Image height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border: 3px solid #efd8d8; /* Optional border */
+    z-index: 2; /* Ensure the image is above the rocket */
+  }
+  
+  .console-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    cursor: grab;
+  }
+
+  .book-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    cursor: grab;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center align items horizontally */
+      justify-content: flex-start; /* Align content to the top */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .image-container {
+      position: relative;
+      width: 200px; /* Container width */
+      height: 200px; /* Container height */
+      margin-top: 70% ; /* Remove any margin-top */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .center-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; /* Makes the image circular */
+      object-fit: cover; /* Ensures the image maintains aspect ratio */
+      border: 3px solid #efd8d8; /* Optional border */
+      z-index: 2;
+    }
+  
+    .text-container {
+      margin: 0; /* Remove any default margin */
+      text-align: center; /* Center the text */
+      padding: 0; /* Ensure no padding is added */
+    }
+  
+    .textHtitle {
+      font-size: 8vw; /* Larger font size for readability */
+      text-align: center; /* Center-align text */
+      margin: 5px 0 0 0; /* Reduce margin to minimize gap */
+    }
+  
+    .hTitle {
+      font-size: 6vw; /* Adjust font size */
+      text-align: center; /* Center-align on smaller screens */
+      margin-top: 5px; /* Small gap between the main title and subtext */
+    }
+
+    .console-image {
+      width: 150px; /* Smaller width for mobile */
+      height: 150px; /* Smaller height for mobile */
+    }
+
+    .book-image {
+      width: 150px;
+      height: 150px;
+    }
+    .draggable-book {
+      top: 10px; /* Move closer to the top */
+      right: 5px; /* Move closer to the left */
+    }
+  
+    .draggable-console {
+      top: 10px; /* Move closer to the top */
+      left: 5px; /* Move closer to the left */
+    }
+  }
+  
+  
+  
+  
+  
+  @media (min-width: 1200px) {
+    .center-image {
+      width: 300px; /* Larger width for desktops */
+      height: 300px; /* Larger height for desktops */
+    }
+  
+    
+  }
+  

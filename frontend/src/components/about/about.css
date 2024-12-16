@@ -1,0 +1,130 @@
+/* About Section */
+.about {
+    padding: 40px 0;
+    background-color: #f8f8f8; /* Light background color for contrast */
+  }
+  
+  .about-me-text {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+  }
+  
+  .about-me-text h1 {
+    font-size: 36px;
+    color: #e7dddd;
+    margin-bottom: 20px;
+  }
+  
+  .about-me-text p {
+    font-size: 18px;
+    color: #dfd8d8;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Tech Stack Wrapper */
+  .tech-stack-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .tech-stack-wrapper h2 {
+    font-size: 32px;
+    color: #f5f4f4; /* Dark color for the title */
+    margin-bottom: 20px;
+  }
+  
+  .tech-stack-wrapper p {
+    font-size: 18px;
+    color: #777; /* Lighter color for description */
+    margin-bottom: 20px;
+  }
+  
+  /* Tech Stack Container (Transparent Background) */
+  .tech-stack-container {
+    background: transparent; /* Set background to transparent */
+    padding: 3rem 0;
+    border-radius: 8px;
+    box-shadow: none; /* Remove any shadow for transparency effect */
+  }
+  
+  /* Tech Stack Section Styling */
+  .tech-stack-section {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly transparent background for the section */
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px); /* Optional: Adds a blur effect */
+  }
+  
+  /* Tech Images Layout */
+  .tech-images {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between images */
+  }
+  
+  /* Individual Tech Item Styling */
+  .tech-item {
+    text-align: center;
+  }
+  
+  .tech-image {
+    width: 60px; /* Adjust image size */
+    height: 60px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tech-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Tech Item Text */
+  .tech-item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media screen and (max-width: 768px) {
+    .about-me-text h1 {
+      font-size: 28px;
+    }
+  
+    .about-me-text p {
+      font-size: 16px;
+    }
+  
+    .tech-stack-wrapper h2 {
+      font-size: 28px;
+    }
+  
+    .tech-stack-wrapper p {
+      font-size: 16px;
+    }
+  
+    .tech-images {
+      flex-direction: column; /* Stack images vertically on smaller screens */
+      gap: 1rem;
+    }
+  
+    .tech-image {
+      width: 50px; /* Adjust image size for smaller screens */
+      height: 50px;
+    }
+  }
+  
+  .slick-dots li button:before {
+    color: #007acc; /* Color of dots */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #005fa3; /* Color of active dot */
+  }
+  
